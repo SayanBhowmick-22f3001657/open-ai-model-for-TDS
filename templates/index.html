@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      div {
+        text-align: center;
+        margin-top: 100px;
+      }
+      input {
+        width: 300px;
+        height: 30px;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 5px;
+        margin: 10px;
+      }
+      input[type="submit"] {
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 5px;
+        margin: 10px;
+        background-color: #4caf50;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open API</title>
+  </head>
+  <body>
+    <div>
+      <form action="/" method="POST">
+        <input
+          type="text"
+          id="input"
+          name="input"
+          placeholder="Enter your question here...."
+          required />
+        <br /><br />
+        <input
+          type="password"
+          id="api_key"
+          name="api_key"
+          placeholder="Enter Your API Key"
+          required />
+        <br /><br />
+        <input type="submit" name="submit" />
+      </form>
+    </div>
+    <div>{{ result }}</div>
+  </body>
+</html>
